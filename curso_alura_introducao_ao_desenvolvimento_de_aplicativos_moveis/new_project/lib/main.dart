@@ -32,6 +32,17 @@ class MyApp extends StatelessWidget {
 
             Divider(),
             TituloSecao(titulo: 'Ícone'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.favorite, color: Colors.red, size: 32),
+                Icon(Icons.star, color: Colors.amber, size: 32),
+                Icon(Icons.settings, color: Colors.blue, size: 32),
+              ],
+            ),
+
+            Divider(),
+            TituloSecao(titulo: 'Elevated button'),
           ],
         ),
       ),
