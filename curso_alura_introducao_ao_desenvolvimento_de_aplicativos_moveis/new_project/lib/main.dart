@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Widgets de conteúdo')),
-        body: Column(
+        body: ListView(
+          padding: EdgeInsets.all(16),
           children: [
             TituloSecao(titulo: 'Textos'),
             Text(
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
 
             Divider(),
             TituloSecao(titulo: 'Imagem'),
-            Image.network('https://picsum.photos:/id/237/200/300'),
+            Image.network('https://picsum.photos:/id/237/200/300', height: 240),
 
             Divider(),
             TituloSecao(titulo: 'Ícone'),
