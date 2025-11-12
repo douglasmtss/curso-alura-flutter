@@ -43,15 +43,46 @@ class ListContents extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Catálado de Widgets')),
-      body: Column(
+      body: GridView.count(
+        crossAxisCount: 2,
+        padding: EdgeInsets.all(16),
+        crossAxisSpacing: 16,
+        childAspectRatio: 0.85,
         children: secoes
             .map(
-              (item) => ElevatedButton(
-                onPressed: () => Navigator.push(
+              (item) => GestureDetector(
+                onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => item.destino),
                 ),
-                child: Text(item.titulo),
+                child: Card(
+                  elevation: 4,
+                  child: Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Column(
+                      children: [
+                        Icon(item.icone, size: 48, color: Colors.blue),
+                        Text(
+                          item.titulo,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        Text(
+                          item.descricao,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 12, color: Colors.green),
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             )
             .toList(),
