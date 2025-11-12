@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
 
             Divider(),
             TituloSecao(titulo: 'Elevated button'),
+            ElevatedButton(onPressed: () {}, child: Text('Clique aqui')),
           ],
         ),
       ),
