@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CicloStateful extends StatefulWidget {
-  const CicloStateful({super.key});
+  final Color cor;
+  const CicloStateful({super.key, required this.cor});
 
   @override
   State<CicloStateful> createState() => _CicloStatefulState();
@@ -37,6 +38,13 @@ class _CicloStatefulState extends State<CicloStateful> {
   @override
   Widget build(BuildContext context) {
     print('build: Widget construído / reconstruído');
-    return const Placeholder();
+    return Container(
+      height: 200,
+      width: 200,
+      color: widget.cor,
+      child: Center(
+        child: Text('Cor atual', style: TextStyle(color: Colors.white)),
+      ),
+    );
   }
 }
