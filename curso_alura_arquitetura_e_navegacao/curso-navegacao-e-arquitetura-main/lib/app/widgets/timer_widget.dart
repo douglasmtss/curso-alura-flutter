@@ -20,6 +20,10 @@ class _TimerWidgetState extends State<TimerWidget> {
   Duration duration = Duration.zero;
 
   void startTimer() {
+    setState(() {
+      duration = Duration.zero;
+    });
+
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
         if (duration.inMinutes < widget.initialMinutes) {
@@ -35,6 +39,12 @@ class _TimerWidgetState extends State<TimerWidget> {
   @override
   void initState() {
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    timer?.cancel();
   }
 
   @override
@@ -72,7 +82,12 @@ class _TimerWidgetState extends State<TimerWidget> {
                 setState(() {
                   isPlaying = !isPlaying;
                 });
-                startTimer();
+
+                if (isPlaying) {
+                  startTimer();
+                } else {
+                  timer?.cancel();
+                }
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: isPlaying ? Colors.red : AppConfig.buttonColor,
