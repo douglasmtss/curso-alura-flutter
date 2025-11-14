@@ -3,7 +3,7 @@ import 'package:fokus/app/shared/enums/timer_type.dart';
 
 void main() {
   group('TimerType enum', () {
-    test('deve conter os três modos esperados', () {
+    test(' deve conter os três modos esperados', () {
       expect(TimerType.values.length, 3);
       expect(
         TimerType.values,
@@ -16,7 +16,7 @@ void main() {
     });
 
     test(
-      'cada modo possui título, a imagem e os minutos corretos / esperados',
+      'cada modo possui o título, a imagem e os minutos corretos / esperados',
       () {
         expect(TimerType.focus.title, 'Modo Foco');
         expect(TimerType.focus.minutes, 25);

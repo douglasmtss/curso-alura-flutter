@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fokus/app/view_model/timer_view_model.dart';
 
 void main() {
-  group('TimeViewModel', () {
+  group('TimerViewModel', () {
     late TimerViewModel vm;
     late ValueNotifier<bool> isPaused;
 
@@ -11,7 +11,6 @@ void main() {
       vm = TimerViewModel();
       isPaused = ValueNotifier<bool>(false);
     });
-
     test('inicia parado com duração zero', () {
       expect(vm.isPlaying, isFalse);
       expect(vm.duration, Duration.zero);
@@ -44,7 +43,7 @@ void main() {
       });
     });
 
-    group('stopTime', () {
+    group('stopTime - ', () {
       test('desliga o temporizador', () {
         vm.startTimer(1, isPaused);
         expect(vm.isPlaying, isTrue);
