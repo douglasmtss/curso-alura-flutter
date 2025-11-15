@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:app_test_fiap/app/features/home/controller/home_cubit.dart';
@@ -64,7 +65,10 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: const UseDevAppBar(),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => _navigateToCreateProduct(context, null),
+        onPressed: () => _navigateToCreateProduct(
+          context,
+          context.read<HomeCubit>(),
+        ),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         icon: const Icon(Icons.add),
