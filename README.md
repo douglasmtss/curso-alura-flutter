@@ -33,3 +33,4 @@ Iniciando os estudos sobre Flutter na Alura
 - [Guide to app architecture](https://developer.android.com/topic/architecture)
 - [TMDB Movie](https://developer.themoviedb.org/reference/search-movie)
 - [Como configurar o Firebase no Flutter](https://cursos.alura.com.br/extra/alura-mais/como-configurar-o-firebase-no-flutter-c1794)
+- [Cloud Firestore](https://firebase-google-com.translate.goog/docs/firestore?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
