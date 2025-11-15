@@ -25,6 +25,9 @@ Iniciando os estudos sobre Flutter na Alura
 - [API Swagger](https://api.escuelajs.co/docs#/products/ProductsController_getAll)
 - [Design Patterns com Dart para Flutter | Cinetopia](https://www.figma.com/community/file/1428112005463786341)
 - [Design patterns: Breve introdução aos padrões de projeto](https://www.alura.com.br/artigos/design-patterns-introducao-padroes-projeto)
--(BottomNavigationBar class)[https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html]
-- (CustomScrollView class)[https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html]
-- (Using slivers to achieve fancy scrolling)[https://docs.flutter.dev/ui/layout/scrolling/slivers]
+-[BottomNavigationBar class](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
+- [CustomScrollView class](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html)
+- [Using slivers to achieve fancy scrolling](https://docs.flutter.dev/ui/layout/scrolling/slivers)
+- [TMDB](https://www.themoviedb.org/u/douglasmtss)
+- [Guide to app architecture](https://developer.android.com/topic/architecture)
+- [TMDB Movie](https://developer.themoviedb.org/reference/search-movie)
