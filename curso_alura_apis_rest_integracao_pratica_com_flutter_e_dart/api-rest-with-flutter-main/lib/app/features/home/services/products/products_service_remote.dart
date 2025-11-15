@@ -4,17 +4,17 @@ import 'package:app_test_fiap/app/features/home/services/products/products_servi
 import 'package:dio/dio.dart' as dio;
 
 class ProductsServiceRemote implements ProductsService {
-  Future<void> callApi() async {
-    final dioClient = dio.Dio();
-    final result = await dioClient.get('https://api.escuelajs.co/api/v1/products');
-    print('Status: ${result.statusCode}');
-    print('Data: ${result.data.toString()}');
+  dio.Dio get dioClient {
+    final dioInstance = dio.Dio();
+
+    dioInstance.options.baseUrl = 'https://api.escuelajs.co';
+
+    return dioInstance;
   }
 
   @override
   Future<({List<ProductModel> products, Response result})> getProducts() async {
-    final dioClient = dio.Dio();
-    final result = await dioClient.get('https://api.escuelajs.co/api/v1/products');
+    final result = await dioClient.get('/api/v1/products');
 
     final data = result.data as List;
     final products = data.map((e) => ProductModel.fromJson(e)).toList();
