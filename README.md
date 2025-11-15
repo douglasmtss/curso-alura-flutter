@@ -12,6 +12,7 @@ Iniciando os estudos sobre Flutter na Alura
 - [Curso de Flutter: Persistência de Dados com SharedPreferences e Secure Storage](./curso_alura_persistencia_de_dados_com_sharedpreferences_e_secure_storage/)
 
 - [Curso de Flutter: melhore a qualidade do app com design patterns](./curso_alura_melhore_a_qualidade_do_app_com_desgin_patterns/)
+- [Curso de Flutter com Firebase: implementando banco de dados online com Cloud Firestore](./curso_alura_flutter_com_firebase_implementando_banco_de_dados_online_com_cloud_firestore/)
 
 > Emulator crashing when start on Android Studio. Fix it running on the terminal this comman
 > ```bash
@@ -31,3 +32,4 @@ Iniciando os estudos sobre Flutter na Alura
 - [TMDB](https://www.themoviedb.org/u/douglasmtss)
 - [Guide to app architecture](https://developer.android.com/topic/architecture)
 - [TMDB Movie](https://developer.themoviedb.org/reference/search-movie)
+- [Como configurar o Firebase no Flutter](https://cursos.alura.com.br/extra/alura-mais/como-configurar-o-firebase-no-flutter-c1794)
