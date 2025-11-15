@@ -31,8 +31,17 @@ class ProductsServiceRemote implements ProductsService {
   @override
   Future<({ProductModel? product, Response result})> createProduct(
       ProductModel product) async {
-    // TODO: implement createProduct
-    throw UnimplementedError();
+    final result =
+        await dioClient.post('/api/v1/products', data: product.toJson());
+
+    if (result.statusCode == 201) {
+      return (product: product, result: const Success());
+    }
+
+    return (
+      product: null,
+      result: const GeneralFailure(message: 'Erro indefinido')
+    );
   }
 
   @override
