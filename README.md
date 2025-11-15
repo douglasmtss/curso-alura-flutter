@@ -7,6 +7,7 @@ Iniciando os estudos sobre Flutter na Alura
 - [Curso de Flutter: introdução ao desenvolvimento de aplicativos móveis](./curso_alura_introducao_ao_desenvolvimento_de_aplicativos_moveis/)
 - [Curso de Flutter: Arquitetura e Navegação](./curso_alura_arquitetura_e_navegacao/)
 - [Curso de Flutter: Estratégias de Teste e Depuração](./curso_alura_estrategias_de_teste_e_depuracao/)
+- [Curso de APIs REST: integração prática com Flutter e Dart](./curso_alura_apis_rest_integracao_pratica_com_flutter_e_dart/)
 
 > Emulator crashing when start on Android Studio. Fix it running on the terminal this comman `gsettings set org.gnome.mutter check-alive-timeout 0`
 
