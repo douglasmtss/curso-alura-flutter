@@ -54,10 +54,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   (index) {
                     Listin model = listListins[index];
                     return Dismissible(
+                      key: ValueKey<Listin>(model),
+                      direction: DismissDirection.endToStart,
+                      background: Container(
+                        alignment: Alignment.centerRight,
+                        padding: const EdgeInsets.only(right: 8.0),
+                        color: Colors.red,
+                        child: const Icon(
+                          Icons.delete,
+                          color: Colors.white,
+                        ),
+                      ),
                       onDismissed: (direction) {
                         remove(model);
                       },
-                      key: ValueKey<Listin>(model),
                       child: ListTile(
                         onTap: () {
                           print('clicou');
