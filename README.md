@@ -8,11 +8,10 @@ Iniciando os estudos sobre Flutter na Alura
 - [Curso de Flutter: Arquitetura e Navegação](./curso_alura_arquitetura_e_navegacao/)
 - [Curso de Flutter: Estratégias de Teste e Depuração](./curso_alura_estrategias_de_teste_e_depuracao/)
 - [Curso de APIs REST: integração prática com Flutter e Dart](./curso_alura_apis_rest_integracao_pratica_com_flutter_e_dart/)
-
 - [Curso de Flutter: Persistência de Dados com SharedPreferences e Secure Storage](./curso_alura_persistencia_de_dados_com_sharedpreferences_e_secure_storage/)
-
 - [Curso de Flutter: melhore a qualidade do app com design patterns](./curso_alura_melhore_a_qualidade_do_app_com_desgin_patterns/)
 - [Curso de Flutter com Firebase: implementando banco de dados online com Cloud Firestore](./curso_alura_flutter_com_firebase_implementando_banco_de_dados_online_com_cloud_firestore/)
+- [Curso de Flutter com Firebase: evoluindo a aplicação com o Cloud Firestore](./curso_alura_flutter_com_firebase_evoluindo_aplicacao_com_o_cloud_firestore/)
 
 > Emulator crashing when start on Android Studio. Fix it running on the terminal this comman
 > ```bash
