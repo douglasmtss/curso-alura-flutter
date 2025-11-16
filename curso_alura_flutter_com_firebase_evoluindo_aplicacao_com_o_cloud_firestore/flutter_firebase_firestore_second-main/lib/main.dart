@@ -1,12 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_firebase_firestore_second/firestore/presentation/home_screen.dart';
 import 'firebase_options.dart';
-import 'firestore/presentation/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -14,9 +13,10 @@ void main() async {
   runApp(const MyApp());
 
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-  firestore.collection("Só para testar").doc("Estou testando").set({
-    "funcionou?": true,
-  });
+  firestore
+      .collection('Só para testar')
+      .doc('Estou testando')
+      .set({'funcionou?': true});
 }
 
 class MyApp extends StatelessWidget {

@@ -36,8 +36,8 @@ class _ProdutoScreenState extends State<ProdutoScreen> {
         children: [
           Container(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
-            child: Column(
-              children: const [
+            child: const Column(
+              children: [
                 Text(
                   "R\$${0}",
                   style: TextStyle(fontSize: 42),

@@ -2,9 +2,6 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
-    // START: FlutterFire Configuration
-    id "com.google.gms.google-services"
-    // END: FlutterFire Configuration
 }
 
 def localProperties = new Properties()
@@ -31,7 +28,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "br.com.alura.flutter_firebase_firestore_second"
+    namespace "br.com.alura.flutter_firebase_firestore_first"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -54,14 +51,13 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "br.com.alura.flutter_firebase_firestore_second"
+        applicationId "br.com.alura.flutter_firebase_firestore_first"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        multiDexEnabled true
     }
 
     buildTypes {

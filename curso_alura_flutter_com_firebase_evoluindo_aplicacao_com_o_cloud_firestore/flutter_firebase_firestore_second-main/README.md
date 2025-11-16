@@ -1,6 +1,6 @@
-# Listin (02 - Firestore)
+# Listin (01 - Firestore)
 
-![thumb-flutter-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_second/raw/main/thumbnail.png)
+![thumb-flutter-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_first/raw/main/thumbnail.png)
 
 Aplicação para gerenciar Lista de Compras colaborativas.
 
@@ -16,21 +16,18 @@ Aplicação para gerenciar Lista de Compras colaborativas.
 
 Nesse projeto criaremos a base para o desenvolvimento de um Gerenciador de Lista de compras. Usaremos as ferramentas do Cloud Firestore com Flutter para Adicionar, Ler, Alterar e Remover informações.
 
-![gif-flutter-cloud-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_second/raw/main/gif.gif)
+![gif-flutter-cloud-firestore](https://github.com/alura-cursos/flutter_firebase_firestore_first/raw/main/gif.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-- `Importação e Adaptação de Telas`: Quando trabalhamos em um projeto real é natural que possamos receber uma parte dele já pronto, por exemplo, as telas para que possamos implementar os comportamentos com o Banco de Dados;
-- `Manipulação de Subcoleções`: Realizar operações em coleções que pertecem a documentos;
-- `Filtros com o Firestore`: Utilizar o método `.where()` para fazer consultas com filtros;
-- `Ordenação com o Firestore`: Utilizar o método `.orderBy()` para fazer consultas ordenadas;
-- `Leitura em tempo real`: Usar Streams para "ouvir" modificações no banco de dados;
-- `Melhorias visuais`: Tornar a aplicação mais profissional alterando o `ThemeData`;
-
+- `Adição no Firestore`: Adicionar informações no Banco de Dados do Firestore;
+- `Leitura com Firestore`: Ler manualmente informações do Banco de Dados do Firestore;
+- `Alteração com Firestore`: Alterar informações no Banco de Dados do Firestore;
+- `Remoção com Firestore`: Remover informações no Banco de Dados do Firestore;
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/alura-cursos/flutter_firebase_firestore_second/tree/aula05) ou [baixá-lo](https://github.com/alura-cursos/flutter_firebase_firestore_second/archive/refs/heads/aula05.zip).
+Você pode [acessar o código fonte do projeto](https://github.com/alura-cursos/flutter_firebase_firestore_first/tree/aula04) ou [baixá-lo](https://github.com/alura-cursos/flutter_firebase_firestore_first/archive/refs/heads/aula04.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 

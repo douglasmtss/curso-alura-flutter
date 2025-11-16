@@ -1,11 +1,11 @@
 {
-    "name": "flutter_firebase_firestore_second",
-    "short_name": "flutter_firebase_firestore_second",
+    "name": "flutter_firebase_firestore_first",
+    "short_name": "flutter_firebase_firestore_first",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Projeto do segundo curso de Flutter com Firestore da Alura",
+    "description": "Projeto para o primeiro curso de Flutter com Cloud Firestore da Alura",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

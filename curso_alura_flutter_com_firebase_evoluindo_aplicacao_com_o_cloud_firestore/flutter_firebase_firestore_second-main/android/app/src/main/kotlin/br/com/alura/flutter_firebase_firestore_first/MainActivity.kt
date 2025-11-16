@@ -1,4 +1,4 @@
-package br.com.alura.flutter_firebase_firestore_second
+package br.com.alura.flutter_firebase_firestore_first
 
 import io.flutter.embedding.android.FlutterActivity
 
